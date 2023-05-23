@@ -1,0 +1,310 @@
+body {
+    font-family: 'Roboto Slab';
+}
+.navbar {
+    background-color: transparent;
+    transition: all 0.5s;
+}
+#home-section {
+    height: 70vh;
+    background: linear-gradient(#072e33,#0c7075);
+    padding: 0px;
+    margin: 0px;
+}
+#about-section, #contact-section {
+    min-height: 100vh;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+#project-section {
+    min-height: 100vh;
+    background-color: #05161a;
+    padding: 0px;
+    margin: 0px;
+}
+#home-right-div {
+    background: linear-gradient(to bottom right,#072e33,#0c7075);
+}
+#navbar-brand {
+    color:#98c2d7;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+#home-link, #about-link, #project-link, #contact-link {
+    text-decoration: none;
+    color: #98c2d7;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+    margin-left: 10px;
+}
+#home-link:hover, #about-link:hover, #project-link:hover, #contact-link:hover   {
+    color: white;
+    font-weight:bold;
+    border-bottom: 2px solid white;
+}
+#introduction {
+    font-size: 50px;
+}
+
+#site-image {
+    height: 70vh;
+    width: 75vh;
+    padding: 0px;
+    margin: 0px;
+}
+.text {
+    position: relative;
+    font-size: 29px;
+}
+.first-text {
+    color: white;
+}
+.typing-text {
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    color: #98c2d7;
+}
+.typed-cursor {
+    color: #98c2d7;
+}
+#navlist {
+    margin-left: auto;
+    margin-right: 60px;
+}
+#darksection-titles {
+    border-bottom: 5px solid #98c2d7;
+    color: #98c2d7;
+}
+#lightsection-titles {
+    border-bottom: 5px solid #05161a;
+    color: #05161a;
+}
+#section-title-container {
+    width: fit-content ;
+}
+#highlight {
+    color: #98c2d7;
+    font-weight: bold;
+}
+#highlight-dark {
+    color: #0c7075;
+    font-weight: bolder;
+}
+#section-paragraph {
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 2rem;
+}
+#CVbutton {
+    border-radius: 50px;
+    border-color:#072e33;
+    padding: 20px;
+    background-color: #072e33;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+}
+#CVbutton:hover {
+    border-radius: 50px;
+    border-color: #0c7075;
+    padding: 20px;
+    color: #0c7075;
+    font-weight: bold;
+    background-color: white;
+}
+.navbar-scrolled {
+    background-color: #05161a;
+}
+#linkbutton {
+    background: linear-gradient(to bottom right,#072e33,#0c7075);
+}
+#footer {
+    background-color: #05161a;
+}
+#links-row {
+    width: 500px;
+}
+#project-card {
+    width: 22rem;
+    height: 320px;
+    padding: 10px;
+    background: linear-gradient(to bottom right,#072e33,#0c7075);
+}
+.card-img-top {
+    height: 200px;
+}
+#badge {
+    background-color: #072e33;
+    color:#98c2d7;
+}
+#modal-body {
+    padding: 10px 70px 70px 70px;
+}
+.modal-content {
+    background: linear-gradient(to bottom right,#072e33,#0c7075);
+}
+
+@media screen and (max-width: 767px){
+    #modal-body {
+        padding: 10px 45px 45px 45px;
+    }
+    #CVbutton {
+        border-radius: 50px;
+        padding: 15px;
+        font-size: 15px;
+        width: 140px;
+    }
+    #CVbutton:hover {
+        border-radius: 50px;
+        padding: 15px;
+        font-weight: bold;
+        background-color: white;
+    }
+    #section-paragraph {
+        font-size: 15px;
+        text-align: justify;
+        text-indent: 2rem;
+    }
+    #home-section {
+        height: 50vh;
+    }
+    #about-section, #contact-section {
+        min-height: 50vh;
+    }
+    #project-section {
+        min-height: 50vh;
+    }
+    #darksection-titles {
+        font-size: 20px;
+        border-bottom: 4px solid #98c2d7;
+    }
+    #lightsection-titles {
+        font-size: 20px;
+        border-bottom: 4px solid #05161a;
+    }
+    #introduction {
+        font-size: 25px;
+    }
+    .first-text {
+        font-size: 18px;
+    }
+    #introduction-hi {
+        font-size: 18px;
+    }
+    #site-image {
+        height: 50vh;
+        width: 55vh;
+        padding: 0px;
+        margin: 0px;
+    }
+    #navbar-brand {
+        font-size: 22px;
+    }
+    #footer {
+         font-size: 14px;
+    }
+    #highlight {
+        font-size: 15px;
+    }
+    #highlight-dark {
+        font-size: 15px;
+    }
+    #footer {
+        font-size: 15px;
+    }
+    #navlist {
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px; 
+        text-align: center;   
+    }
+    .navbar {
+        background-color: #05161a;
+    }
+}
+
+@media screen and (max-width: 575px){
+    #modal-body {
+        padding: 10px 20px 20px 20px;
+    }
+    .navbar {
+        background-color: #05161a;
+    }
+    #home-section {
+        height: 40vh;
+    }
+    #about-section, #contact-section {
+        min-height: 50vh;
+    }
+    #project-section {
+        min-height: 50vh;
+    }
+    #site-image {
+        height: 40vh;
+        width: 40vh;
+    }
+    #CVbutton {
+        border-radius: 50px;
+        padding: 13px;
+        font-size: 12px;
+        width: 120px;
+    }
+    #CVbutton:hover {
+        border-radius: 50px;
+        padding: 13px;
+        font-weight: bold;
+        background-color: white;
+    }
+    #section-paragraph {
+        font-size: 13px;
+        text-align: justify;
+        text-indent: 2rem;
+    }
+    #highlight {
+        font-size: 13px;
+    }
+    #highlight-dark {
+        font-size: 13px;
+    }
+    #footer {
+        font-size: 13px;
+    }
+    #introduction-hi {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+    #introduction {
+        font-size: 20px;
+    }
+    .first-text {
+        font-size: 15px;
+    }
+    #navbar-brand {
+        font-size: 17px;
+    } 
+    .navbar-toggler {
+        width: 40px;
+        height: 35px;
+        padding: 0px;
+    }
+    .navbar-toggler-icon {
+        width: 20px;
+        height: 15px;
+        padding: 0px;
+        margin-top: -5px;
+    }
+    #darksection-titles {
+        font-size: 17px;
+        border-bottom: 3px solid #98c2d7;
+    }
+    #lightsection-titles {
+        font-size: 17px;
+        border-bottom: 3px solid #05161a;
+    }
+    #links-row {
+        width: 300px;
+    }
+}
