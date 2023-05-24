@@ -91,3 +91,23 @@ function highlight (val) {
         projectlink.style.color = "#98c2d7";
     }
 }
+
+function projectHoverIn(val) {
+
+    var card = document.getElementById('project-card'+val);
+    var highlight = document.getElementById('highlight'+val);
+
+    card.style.background="#98c2d7";
+    highlight.style.color="#0c7075";
+    card.style.transition = "all 0.5s";
+
+}
+function projectHoverOut(val) {
+    var card = document.getElementById('project-card'+val);
+    var highlight = document.getElementById('highlight'+val);
+
+
+    highlight.style.color="#98c2d7";
+    card.style.background="linear-gradient(to bottom right,#072e33,#0c7075)";
+    card.style.transition = "all 0.5s";
+}
