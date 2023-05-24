@@ -6,7 +6,8 @@ body {
     transition: all 0.5s;
 }
 #home-section {
-    height: 70vh;
+    min-height: 80vh;
+    height: auto;
     background: linear-gradient(#072e33,#0c7075);
     padding: 0px;
     margin: 0px;
@@ -16,12 +17,16 @@ body {
     background-color: white;
     padding: 0px;
     margin: 0px;
+    display: flex;
+    align-items: center;
 }
 #project-section {
     min-height: 100vh;
     background-color: #05161a;
     padding: 0px;
     margin: 0px;
+    display: flex;
+    align-items: center;
 }
 #home-right-div {
     background: linear-gradient(to bottom right,#072e33,#0c7075);
@@ -47,10 +52,9 @@ body {
 #introduction {
     font-size: 50px;
 }
-
 #site-image {
-    height: 70vh;
-    width: 75vh;
+    height: 80vh;
+    width: 90vh;
     padding: 0px;
     margin: 0px;
 }
@@ -85,13 +89,13 @@ body {
 #section-title-container {
     width: fit-content ;
 }
-#highlight {
+#highlight, #highlight1, #highlight2, #highlight3 {
     color: #98c2d7;
     font-weight: bold;
 }
 #highlight-dark {
     color: #0c7075;
-    font-weight: bolder;
+    font-weight: bold;
 }
 #section-paragraph {
     font-size: 20px;
@@ -127,7 +131,7 @@ body {
 #links-row {
     width: 500px;
 }
-#project-card {
+#project-card1, #project-card2, #project-card3 {
     width: 22rem;
     height: 320px;
     padding: 10px;
@@ -146,10 +150,36 @@ body {
 .modal-content {
     background: linear-gradient(to bottom right,#072e33,#0c7075);
 }
-
+#paragraph-container {
+    width: 75%;
+}
+@media screen and (max-width: 991px){
+    #home-section {
+        min-height: 70vh;
+        height: auto;
+    }
+    #site-image {
+        height: 70vh;
+        width: 75vh;
+        padding: 0px;
+        margin: 0px;
+    }
+    .navbar {
+        background-color: #05161a;
+    }
+    #navlist {
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px; 
+        text-align: center;   
+    }
+}
 @media screen and (max-width: 767px){
     #modal-body {
         padding: 10px 45px 45px 45px;
+    }
+    .card-img-top {
+        height: 180px;
     }
     #CVbutton {
         border-radius: 50px;
@@ -169,7 +199,8 @@ body {
         text-indent: 2rem;
     }
     #home-section {
-        height: 50vh;
+        min-height: 50vh;
+        height: auto;
     }
     #about-section, #contact-section {
         min-height: 50vh;
@@ -206,7 +237,7 @@ body {
     #footer {
          font-size: 14px;
     }
-    #highlight {
+    #highlight, #highlight1, #highlight2, #highlight3 {
         font-size: 15px;
     }
     #highlight-dark {
@@ -221,12 +252,20 @@ body {
         width: 150px; 
         text-align: center;   
     }
-    .navbar {
-        background-color: #05161a;
+    #paragraph-container {
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 575px){
+    .card-img-top {
+        height: 150px;
+    }
+    #home-right-div {
+        height: 30vh;
+        padding-bottom: 20px;
+        text-align: center;
+    }
     #modal-body {
         padding: 10px 20px 20px 20px;
     }
@@ -234,7 +273,8 @@ body {
         background-color: #05161a;
     }
     #home-section {
-        height: 40vh;
+        min-height: 40vh;
+        height: auto;
     }
     #about-section, #contact-section {
         min-height: 50vh;
@@ -243,8 +283,8 @@ body {
         min-height: 50vh;
     }
     #site-image {
-        height: 40vh;
-        width: 40vh;
+        height: inherit;
+        width: inherit;
     }
     #CVbutton {
         border-radius: 50px;
@@ -263,7 +303,7 @@ body {
         text-align: justify;
         text-indent: 2rem;
     }
-    #highlight {
+    #highlight, #highlight1, #highlight2, #highlight3 {
         font-size: 13px;
     }
     #highlight-dark {
@@ -273,14 +313,14 @@ body {
         font-size: 13px;
     }
     #introduction-hi {
-        font-size: 15px;
-        margin-top: 30px;
+        font-size: 17px;
+        margin-top: 0px;
     }
     #introduction {
-        font-size: 20px;
+        font-size: 22px;
     }
     .first-text {
-        font-size: 15px;
+        font-size: 17px;
     }
     #navbar-brand {
         font-size: 17px;
@@ -306,5 +346,21 @@ body {
     }
     #links-row {
         width: 300px;
+    }
+    #paragraph-container {
+        width: 100%;
+    }
+    #project-card1, #project-card2, #project-card3 {
+        width: 18rem;
+        height: 280px;
+        padding: 6px;
+    }
+    #badge {
+        font-size: 10px;
+    }
+    #linkbutton {
+        width: 35px;
+        height: 35px;
+        padding: 0px;
     }
 }
