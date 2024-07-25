@@ -148,6 +148,7 @@ body {
 #badge {
     background-color: #072e33;
     color:#98c2d7;
+    display: inline-block;
 }
 #modal-body {
     padding: 10px 70px 70px 70px;
