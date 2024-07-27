@@ -136,7 +136,7 @@ body {
 #links-row {
     width: 500px;
 }
-#project-card1, #project-card2, #project-card3 {
+#project-card1, #project-card2, #project-card3,#project-card4 {
     width: 22rem;
     height: 320px;
     padding: 10px;
@@ -209,7 +209,7 @@ body {
         height: auto;
     }
     #about-section, #contact-section {
-        min-height: 80vh;
+        min-height: 80cah;
     }
     #project-section {
         min-height: 80vh;
@@ -356,7 +356,7 @@ body {
     #paragraph-container {
         width: 100%;
     }
-    #project-card1, #project-card2, #project-card3 {
+    #project-card1, #project-card2, #project-card3,#project-card4 {
         width: 18rem;
         height: 280px;
         padding: 6px;
